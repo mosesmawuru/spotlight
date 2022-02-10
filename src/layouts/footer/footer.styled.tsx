@@ -10,13 +10,22 @@ export const FooterSection = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  @media screen and (max-width: 700px) {
+    align-items: start;
+  }
 `;
 
 export const SocialGroup = styled.div`
-  font-size: 30px;
+  font-size: clamp(26px, 4vw, 30px);
   color: white;
   & > *:not(:first-child) {
-    margin-left: 25px;
+    margin-left: 30px;
+  }
+  min-width: 118px;
+  @media screen and (max-width: 768px) {
+    & > *:not(:first-child) {
+      margin-left: 20px;
+    }
   }
   & > * {
     cursor: pointer;
@@ -36,27 +45,47 @@ export const FooterLogo = styled.div`
     margin-right: 17px;
   }
   span {
-    font-size: 21px;
+    font-size: clamp(18px, 4vw, 21px);
     font-weight: 700;
     color: #ffffff;
   }
 `;
 
 export const FooterLinks = styled.div`
+  display: flex;
   margin-top: 5px;
-  & > * {
+  * {
     font-weight: 500;
     font-size: 13px;
     color: #949494;
     text-decoration: none;
   }
-  & > *:not(:first-child) {
-    margin-left: 15px;
+  span {
+    margin-right: 15px;
   }
   a {
     transition: all 0.3s;
     :hover {
       color: #c0bcfc;
+    }
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+`;
+
+export const LinkGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  & > *:not(:last-child) {
+    margin-right: 15px;
+  }
+  @media screen and (max-width: 700px) {
+    & > * {
+      margin-top: 15px;
     }
   }
 `;

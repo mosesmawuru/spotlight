@@ -4,6 +4,7 @@ import {
   FooterLogo,
   FooterSection,
   FooterWrapper,
+  LinkGroup,
   SocialGroup,
 } from "./footer.styled";
 
@@ -25,10 +26,12 @@ const Footer = () => {
             </FooterLogo>
             <FooterLinks>
               <span>© Web4, Inc. {new Date().getFullYear()}</span>
-              <Link to="/">Privacy Policy</Link>
-              <Link to="/">Terms of Service</Link>
-              <Link to="/">Cookies Policy</Link>
-              <Link to="/">Blog</Link>
+              <LinkGroup>
+                <Link to="/">Privacy Policy</Link>
+                <Link to="/">Terms of Service</Link>
+                <Link to="/">Cookies Policy</Link>
+                <Link to="/">Blog</Link>
+              </LinkGroup>
             </FooterLinks>
           </div>
           <SocialGroup>
