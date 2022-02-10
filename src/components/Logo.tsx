@@ -4,6 +4,7 @@ import styled from "styled-components";
 import logoSVG from "assets/image/logo.svg";
 
 const LogoDiv = styled.div`
+  cursor: pointer;
   display: flex;
   align-items: center;
   img {

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Container from "components/Container";
 import {
+  DiscordBtn,
   HeaderMenu,
   HeaderText,
   HeaderWrapper,
@@ -10,17 +11,41 @@ import {
 } from "./header.styled";
 import Logo from "components/Logo";
 
-import discordSVG from "assets/image/discord.svg";
 import { Link } from "react-router-dom";
+import { FaDiscord } from "react-icons/fa";
 
 const Header = () => {
+  const handleScroll = () => {
+    const headerElem: any = document.getElementById("header");
+    const headerMenu: any = document.getElementById("headerMenu");
+    if (document.documentElement.scrollTop === 0) {
+      headerElem.style.background = "transparent";
+      headerElem.style.boxShadow = "none";
+      headerMenu.style.padding = "28px 0";
+    } else {
+      headerElem.style.background = "#ffc8a0";
+      headerElem.style.boxShadow = "0 0 5px 5px #00000040";
+      headerMenu.style.padding = "20px 0";
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id="header">
       <HeaderText>Spotlight just applied to YC!</HeaderText>
       <Container>
-        <HeaderMenu>
+        <HeaderMenu id="headerMenu">
           <div>
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
             <MenuGroup>
               <MenuItem>
                 <Link to="/">Homepage</Link>
@@ -36,9 +61,9 @@ const Header = () => {
               </MenuItem>
             </MenuGroup>
           </div>
-          <div>
-            <img src={discordSVG} alt="discord" />
-          </div>
+          <DiscordBtn>
+            <FaDiscord />
+          </DiscordBtn>
         </HeaderMenu>
       </Container>
     </HeaderWrapper>
