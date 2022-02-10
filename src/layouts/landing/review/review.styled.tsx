@@ -31,7 +31,7 @@ export const ReviewCard = styled.div`
   border-radius: 30px;
   max-width: 859px;
   width: 90%;
-  margin: 70px 0;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: start;
