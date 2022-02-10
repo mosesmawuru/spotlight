@@ -14,7 +14,7 @@ export const HeaderText = styled.div`
   text-align: center;
   padding: 10px 0;
   color: white;
-  font-size: 18px;
+  font-size: clamp(15px, 4.3vw, 18px);
   font-weight: 700;
 `;
 

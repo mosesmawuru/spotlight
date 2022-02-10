@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.div`
-  max-width: 622px;
-  width: 90%;
+  width: 622px;
   margin: 125px auto;
   background: #c0bcfc;
   padding: 60px 90px;
   border-radius: 30px;
+  @media screen and (max-width: 1024px) {
+    width: auto;
+  }
 `;
 
 export const AboutTitle = styled.div`
   font-weight: bold;
-  font-size: 40px;
+  font-size: clamp(20px, 4.3vw, 40px);
   color: #051730;
   text-align: center;
 `;

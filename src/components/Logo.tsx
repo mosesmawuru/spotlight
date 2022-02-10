@@ -13,7 +13,7 @@ const LogoDiv = styled.div`
     margin-right: 17px;
   }
   span {
-    font-size: 28px;
+    font-size: clamp(19px, 4.3vw, 18px);
     font-weight: bold;
     color: #051730;
   }

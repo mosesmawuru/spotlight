@@ -16,7 +16,7 @@ export const MeetSection = styled.div`
 
 export const MeetTitle = styled.h1`
   font-weight: bold;
-  font-size: 35px;
+  font-size: clamp(22px, 4.3vw, 35px);
   color: #051730;
   text-align: center;
   margin: 0 0 10px 0;
@@ -25,7 +25,7 @@ export const MeetTitle = styled.h1`
 export const MeetDesc = styled.p`
   margin: 0;
   font-weight: 500;
-  font-size: 23px;
+  font-size: clamp(14px, 4.3vw, 23px);
   color: #051730;
   opacity: 0.75;
 `;

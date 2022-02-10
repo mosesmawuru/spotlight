@@ -6,8 +6,8 @@ export const ButtonWrapper = styled.button`
   background: #ffffff;
   outline: none;
   border: none;
-  padding: 10px 43px;
-  font-size: 19px;
+  padding: 10px 10%;
+  font-size: clamp(12px, 4vw, 19px);
   font-weight: 800;
   color: #051730;
   transition: all 0.3s;

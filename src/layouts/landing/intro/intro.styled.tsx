@@ -4,29 +4,55 @@ export const IntroSection = styled.div`
   padding-top: 250px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 280px;
+  }
+  @media screen and (max-width: 425px) {
+    padding-top: 217px;
+  }
 `;
 
 export const IntroTextSection = styled.div`
   padding-top: 6%;
   width: 45%;
   color: #051730;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
   h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: clamp(22px, 4.3vw, 40px);
     font-weight: 700;
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
   }
   p {
     margin: 0;
+    margin: auto;
     margin-top: 10px;
-    font-size: 21px;
+    font-size: clamp(12px, 4.3vw, 21px);
     line-height: 31px;
     font-weight: 500;
     opacity: 0.75;
+    @media screen and (max-width: 1024px) {
+      width: 90%;
+
+      text-align: center;
+    }
   }
   div {
     margin-top: 27px;
     & > *:not(:first-child) {
-      margin-left: 25px;
+      margin-left: 3%;
+    }
+    @media screen and (max-width: 1024px) {
+      text-align: center;
     }
   }
 `;
@@ -38,8 +64,20 @@ export const IntroImageSection = styled.div`
   align-items: start;
   img {
     width: 45%;
+    @media screen and (max-width: 1024px) {
+      width: 80%;
+      align-self: center;
+    }
   }
   .intro_img2 {
     padding-top: 10%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    margin-top: 120px;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 80px;
+    flex-direction: column;
   }
 `;

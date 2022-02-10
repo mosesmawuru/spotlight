@@ -12,7 +12,7 @@ export const ReviewTitle = styled.h1`
   margin: 0;
   padding-bottom: 5px;
   text-align: center;
-  font-size: 36px;
+  font-size: clamp(22px, 4.3vw, 36px);
   font-weight: bold;
 `;
 
@@ -21,7 +21,7 @@ export const ReviewDesc = styled.p`
   width: 85%;
   margin: 0;
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(12px, 4.3vw, 18px);
   text-align: center;
 `;
 
@@ -29,17 +29,20 @@ export const ReviewCard = styled.div`
   background-color: #ffffff;
   padding: 32px 65px;
   border-radius: 30px;
-  max-width: 729px;
+  width: 729px;
   width: 90%;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  @media screen and (max-width: 1024px) {
+    width: auto;
+  }
 `;
 
 export const RCardDesc = styled.p`
   font-weight: normal;
-  font-size: 20px;
+  font-size: clamp(15px, 4.3vw, 20px);
   margin: 10px 0;
 `;
 
