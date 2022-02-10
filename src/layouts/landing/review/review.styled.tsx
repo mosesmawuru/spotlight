@@ -29,7 +29,7 @@ export const ReviewCard = styled.div`
   background-color: #ffffff;
   padding: 32px 65px;
   border-radius: 30px;
-  max-width: 859px;
+  max-width: 729px;
   width: 90%;
   margin-top: 70px;
   display: flex;
