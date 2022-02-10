@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "components/Container";
-import { GlimpsePart, IntroPart, ReviewPart } from "layouts/landing";
+import { GlimpsePart, IntroPart, MeetPart, ReviewPart } from "layouts/landing";
 import DotGroup from "components/DotGroup";
 
 const LandingPage = () => {
@@ -11,6 +11,7 @@ const LandingPage = () => {
       <DotGroup />
       <GlimpsePart />
       <DotGroup />
+      <MeetPart />
     </Container>
   );
 };
