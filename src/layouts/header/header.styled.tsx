@@ -71,3 +71,68 @@ export const DiscordBtn = styled.div`
     background-color: #c0bcfc;
   }
 `;
+
+export const MobileMenuButton = styled.div`
+  font-size: 25px;
+  margin-right: 40px;
+  svg {
+    cursor: pointer;
+  }
+`;
+
+export const MobileSidebar = styled.div<{ menu: boolean }>`
+  position: fixed;
+  max-width: 320px;
+  width: 100%;
+  z-index: 10;
+  height: 100vh;
+  left: ${({ menu }) => (menu ? 0 : "-320px")};
+  top: 0;
+  background: #000000a0;
+  backdrop-filter: blur(20px);
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const MobileLayout = styled.div<{ menu: boolean }>`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #00000080;
+  opacity: ${({ menu }) => (menu ? 1 : 0)};
+  visibility: ${({ menu }) => (menu ? "visible" : "hidden")};
+`;
+
+export const MobileLinks = styled.div`
+  padding: 20px 40px;
+  a {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+`;
+
+export const SidebarLogo = styled.div`
+  margin-top: 30px;
+  a {
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      width: 44px;
+      height: 44px;
+      margin-right: 17px;
+    }
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+`;
