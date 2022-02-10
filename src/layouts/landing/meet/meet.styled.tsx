@@ -7,10 +7,22 @@ export const MeetSection = styled.div`
   position: relative;
   img {
     position: absolute;
-    max-width: 153px;
-    width: 100%;
-    top: -70%;
-    right: 25%;
+    width: 153px;
+    top: -150px;
+    right: 20%;
+    @media screen and (max-width: 768px) {
+      width: 130px;
+      top: -127px;
+      right: 15%;
+    }
+    @media screen and (max-width: 425px) {
+      width: 96px;
+      top: -94px;
+      right: 10%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
   }
 `;
 

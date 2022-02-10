@@ -64,8 +64,8 @@ export const IntroImageSection = styled.div`
   align-items: start;
   img {
     width: 45%;
-    @media screen and (max-width: 1024px) {
-      width: 80%;
+    @media screen and (max-width: 425px) {
+      width: 100%;
       align-self: center;
     }
   }
@@ -76,8 +76,7 @@ export const IntroImageSection = styled.div`
     width: 80%;
     margin-top: 120px;
   }
-  @media screen and (max-width: 1024px) {
-    margin-top: 80px;
+  @media screen and (max-width: 425px) {
     flex-direction: column;
   }
 `;

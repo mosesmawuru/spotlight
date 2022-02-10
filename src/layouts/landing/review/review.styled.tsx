@@ -6,6 +6,12 @@ export const ReviewSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-top: 180px;
+  }
+  @media screen and (max-width: 390px) {
+    padding-top: 100px;
+  }
 `;
 
 export const ReviewTitle = styled.h1`
@@ -26,17 +32,21 @@ export const ReviewDesc = styled.p`
 `;
 
 export const ReviewCard = styled.div`
+  position: relative;
   background-color: #ffffff;
   padding: 32px 65px;
   border-radius: 30px;
   width: 729px;
-  width: 90%;
+
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: start;
   @media screen and (max-width: 1024px) {
     width: auto;
+  }
+  @media screen and (max-width: 620px) {
+    padding: 32px 40px;
   }
 `;
 
@@ -50,12 +60,28 @@ export const RCardDescSection = styled.div`
   display: flex;
   justify-content: space-between;
   img {
-    max-width: 205px;
-    width: 100%;
-    margin-bottom: -32px;
+    position: absolute;
+    width: 20%;
+    right: 65px;
+    bottom: 0;
+    min-width: 97px;
+    @media screen and (max-width: 620px) {
+      right: 30px;
+    }
+    @media screen and (max-width: 320px) {
+      right: 10px;
+    }
   }
 `;
 
 export const RCardDescPart = styled.div`
-  width: 60%;
+  width: 70%;
+  @media screen and (max-width: 620px) {
+    width: 100%;
+  }
+  .last-desc {
+    @media screen and (max-width: 620px) {
+      width: 70%;
+    }
+  }
 `;

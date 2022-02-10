@@ -9,6 +9,13 @@ export const AboutSection = styled.div`
   @media screen and (max-width: 1024px) {
     width: auto;
   }
+  @media screen and (max-width: 768px) {
+    padding: 7% 5%;
+    margin: 100px auto;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 70px auto;
+  }
 `;
 
 export const AboutTitle = styled.div`
@@ -23,6 +30,6 @@ export const AboutButtons = styled.div`
   display: flex;
   justify-content: center;
   & > *:not(:first-child) {
-    margin-left: 25px;
+    margin-left: 5%;
   }
 `;

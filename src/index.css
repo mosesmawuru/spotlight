@@ -15,3 +15,7 @@ code {
 #root {
   background-color: #ffc8a0;
 }
+
+* {
+  transition: 0.3s all;
+}

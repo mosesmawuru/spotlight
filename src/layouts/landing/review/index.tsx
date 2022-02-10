@@ -30,7 +30,7 @@ const ReviewPart = () => {
               ✔ A platform that encourages building communities around
               restaurants
             </RCardDesc>
-            <RCardDesc>
+            <RCardDesc className="last-desc">
               ✔ Form relationships with our partner locations to help their
               business grow
             </RCardDesc>
