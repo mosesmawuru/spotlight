@@ -9,8 +9,8 @@ export const IntroSection = styled.div`
     align-items: center;
     padding-top: 280px;
   }
-  @media screen and (max-width: 425px) {
-    padding-top: 217px;
+  @media screen and (max-width: 768px) {
+    padding-top: 170px;
   }
 `;
 
