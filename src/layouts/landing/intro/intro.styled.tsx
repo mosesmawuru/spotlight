@@ -63,13 +63,16 @@ export const IntroImageSection = styled.div`
   justify-content: space-between;
   align-items: start;
   img {
-    width: 45%;
     @media screen and (max-width: 425px) {
       width: 100%;
       align-self: center;
     }
   }
+  .intro_img1 {
+    width: 43%;
+  }
   .intro_img2 {
+    width: 46%;
     padding-top: 10%;
   }
   @media screen and (max-width: 1024px) {
