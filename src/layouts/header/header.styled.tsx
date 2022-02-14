@@ -54,7 +54,7 @@ export const MenuItem = styled.div`
   }
 `;
 
-export const DiscordBtn = styled.div`
+export const DiscordBtn = styled.a`
   cursor: pointer;
   display: flex;
   align-items: center;

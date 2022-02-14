@@ -27,10 +27,16 @@ const Footer = () => {
             <FooterLinks>
               <span>© Web4, Inc. {new Date().getFullYear()}</span>
               <LinkGroup>
-                <Link to="/">Privacy Policy</Link>
-                <Link to="/">Terms of Service</Link>
-                <Link to="/">Cookies Policy</Link>
-                <Link to="/">Blog</Link>
+                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/terms">Terms of Service</Link>
+                <Link to="/privacy">Cookies Policy</Link>
+                <a
+                  href="https://medium.com/@FoundSpotlight/why-spotlight-70d533917635"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Blog
+                </a>
               </LinkGroup>
             </FooterLinks>
           </div>

@@ -79,18 +79,28 @@ const Header = () => {
                   <Link to="/">Homepage</Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link to="/">Blog</Link>
+                  <a
+                    href="https://medium.com/@FoundSpotlight/why-spotlight-70d533917635"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Blog
+                  </a>
                 </MenuItem>
                 <MenuItem>
-                  <Link to="/">Terms</Link>
+                  <Link to="/terms">Terms</Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link to="/">Privacy</Link>
+                  <Link to="/privacy">Privacy</Link>
                 </MenuItem>
               </MenuGroup>
             )}
           </div>
-          <DiscordBtn>
+          <DiscordBtn
+            href="https://discord.gg/rw4uXdn2Gb"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaDiscord />
           </DiscordBtn>
         </HeaderMenu>
@@ -103,11 +113,23 @@ const Header = () => {
           </Link>
         </SidebarLogo>
         <MobileLinks>
-          <Link to="">Home</Link>
-          <Link to="">Blog</Link>
-          <Link to="">Terms</Link>
-          <Link to="">Privacy</Link>
-          <Link to="">Discord</Link>
+          <Link to="/">Home</Link>
+          <a
+            href="https://medium.com/@FoundSpotlight/why-spotlight-70d533917635"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Blog
+          </a>
+          <Link to="terms">Terms</Link>
+          <Link to="/privacy">Privacy</Link>
+          <a
+            href="https://discord.gg/rw4uXdn2Gb"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Discord
+          </a>
         </MobileLinks>
       </MobileSidebar>
       <MobileLayout menu={menu} onClick={() => setMenu(false)} />
