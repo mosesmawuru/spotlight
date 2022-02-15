@@ -17,7 +17,9 @@ export const FooterSection = styled.div`
 
 export const SocialGroup = styled.div`
   font-size: clamp(26px, 4vw, 30px);
-  color: white;
+  a {
+    color: white;
+  }
   & > *:not(:first-child) {
     margin-left: 30px;
   }
@@ -29,9 +31,9 @@ export const SocialGroup = styled.div`
   }
   & > * {
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
     :hover {
-      color: #c0bcfc;
+      color: #6860d6;
     }
   }
 `;
