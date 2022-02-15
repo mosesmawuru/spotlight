@@ -62,12 +62,7 @@ export const IntroImageSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: start;
-  img {
-    @media screen and (max-width: 425px) {
-      width: 100%;
-      align-self: center;
-    }
-  }
+
   .intro_img1 {
     width: 43%;
   }
@@ -81,5 +76,11 @@ export const IntroImageSection = styled.div`
   }
   @media screen and (max-width: 425px) {
     flex-direction: column;
+  }
+  @media screen and (max-width: 425px) {
+    img {
+      width: 100% !important;
+      align-self: center;
+    }
   }
 `;
