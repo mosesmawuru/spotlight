@@ -64,12 +64,9 @@ export const IntroImageSection = styled.div`
   align-items: start;
 
   .intro_img1 {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     width: 43%;
   }
   .intro_img2 {
-    border-radius: 20px;
     width: 46%;
     margin-top: 10%;
   }

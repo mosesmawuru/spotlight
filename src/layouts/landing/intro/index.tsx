@@ -6,8 +6,8 @@ import {
   IntroTextSection,
 } from "./intro.styled";
 
-import introSVG1 from "assets/image/intro1.svg";
-import introSVG2 from "assets/image/intro2.svg";
+import introSVG1 from "assets/image/intro1.png";
+import introSVG2 from "assets/image/intro2.png";
 
 const IntroPart = () => {
   return (
