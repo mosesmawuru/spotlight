@@ -33,7 +33,7 @@ const FooterSection = () => {
                 }
               </CardContent>
               <JoinButton
-                href="https://github.com/redblood639/spotlight"
+                href="https://github.com/gladiator0428/spotlight"
                 target="_blank"
               >
                 Go to Github
