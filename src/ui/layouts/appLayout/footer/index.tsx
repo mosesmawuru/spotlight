@@ -43,7 +43,7 @@ const Footer = () => {
                 <SiTwitter />
               </SocialItem>
               <SocialItem
-                href="https://github.com/gladiator0428/spotlight"
+                href="https://github.com/mosesmawuru/spotlight"
                 target="_blank"
               >
                 <SiGithub />
