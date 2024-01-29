@@ -6,6 +6,7 @@ import TermsPage from "pages/terms";
 import PrivacyPage from "pages/privacy";
 
 import { Footer, Header } from "layouts";
+import { MyMark } from "components/MyMark";
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/terms" component={TermsPage} />
       <Route exact path="/privacy" component={PrivacyPage} />
       <Footer />
+      <MyMark />
     </Router>
   );
 }
